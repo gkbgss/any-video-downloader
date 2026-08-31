@@ -47,12 +47,6 @@ def get_base_ydl_opts():
         'no_warnings': True,
         'noplaylist': True,
         'socket_timeout': 15,
-        # Bypass YouTube bot detection on cloud servers (Railway/Render) by spoofing mobile/TV clients
-        'extractor_args': {
-            'youtube': {
-                'player_client': ['android', 'ios', 'web_creator', 'tvembedded'],
-            }
-        },
     }
     
     # Use cookies if provided to bypass bot detection fully
