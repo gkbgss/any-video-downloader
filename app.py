@@ -49,7 +49,7 @@ def get_base_ydl_opts():
         'socket_timeout': 15,
         'extractor_args': {
             'youtube': {
-                'player_client': ['android', 'ios'],
+                'player_client': ['tv', 'web_creator', 'mweb', 'ios'],
             }
         },
     }
