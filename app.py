@@ -54,6 +54,12 @@ def get_base_ydl_opts():
             }
         },
     }
+    
+    # Use cookies if provided to bypass bot detection fully
+    cookie_path = os.path.join(BASE_DIR, 'cookies.txt')
+    if os.path.exists(cookie_path):
+        opts['cookiefile'] = cookie_path
+        
     if FFMPEG_PATH:
         opts['ffmpeg_location'] = FFMPEG_PATH
     return opts
