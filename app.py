@@ -47,6 +47,11 @@ def get_base_ydl_opts():
         'no_warnings': True,
         'noplaylist': True,
         'socket_timeout': 15,
+        'extractor_args': {
+            'youtube': {
+                'player_client': ['android', 'ios'],
+            }
+        },
     }
     
     # Use cookies if provided to bypass bot detection fully
