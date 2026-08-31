@@ -62,6 +62,9 @@ def get_base_ydl_opts():
     cookie_path = os.path.join(BASE_DIR, 'cookies.txt')
     if os.path.exists(cookie_path):
         opts['cookiefile'] = cookie_path
+    elif os.name == 'nt':
+        # Automatically use Chrome cookies if running locally on Windows PC
+        opts['cookiesfrombrowser'] = ('chrome',)
         
     if FFMPEG_PATH:
         opts['ffmpeg_location'] = FFMPEG_PATH
