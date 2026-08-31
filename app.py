@@ -52,6 +52,10 @@ def get_base_ydl_opts():
                 'player_client': ['tv', 'web_creator', 'mweb', 'ios'],
             }
         },
+        'sleep_interval': 5,
+        'max_sleep_interval': 10,
+        'retries': 3,
+        'fragment_retries': 3,
     }
     
     # Use cookies if provided to bypass bot detection fully
