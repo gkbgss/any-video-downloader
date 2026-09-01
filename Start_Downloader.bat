@@ -2,7 +2,7 @@
 title VidVelocity PRO - Universal Video Downloader
 color 0B
 echo ===============================================================================
-echo            VidVelocity PRO - Universal Video & Audio Downloader              
+echo            VidVelocity PRO - Universal Video ^& Audio Downloader              
 echo ===============================================================================
 echo.
 echo [1] Starting local download server...

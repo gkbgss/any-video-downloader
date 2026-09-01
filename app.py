@@ -47,11 +47,6 @@ def get_base_ydl_opts():
         'no_warnings': True,
         'noplaylist': True,
         'socket_timeout': 15,
-        'extractor_args': {
-            'youtube': {
-                'player_client': ['tv', 'web_creator', 'mweb', 'ios'],
-            }
-        },
         'sleep_interval': 5,
         'max_sleep_interval': 10,
         'retries': 3,
